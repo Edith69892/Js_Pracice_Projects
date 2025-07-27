@@ -1,6 +1,6 @@
-const btnCalculate = document.querySelector("#calculateBtn");
-const resetBtn = document.querySelector("#resetBtn");
-const result = document.querySelector("#result");
+const btnCalculate = document.querySelector("#calculateBtn")
+const resetBtn = document.querySelector("#resetBtn")
+const result = document.querySelector("#result")
 
 
 btnCalculate.addEventListener("click", calculateFactorial);
