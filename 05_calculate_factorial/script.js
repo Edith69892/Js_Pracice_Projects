@@ -1,22 +1,40 @@
-const number =  document.querySelector('#numberInput');
-const btnCalculate = document.querySelector('#calculateBtn');
-const result = document.querySelector('#result');
-let factorialNumber = 1;
-btnCalculate.addEventListener('click', calculateFactorial);
+const btnCalculate = document.querySelector("#calculateBtn");
+const resetBtn = document.querySelector("#resetBtn");
+const result = document.querySelector("#result");
 
-function calculateFactorial(){
-    result.textContent = ''; 
-    for (let i = 1; i <= number.value; i++) {
-       factorialNumber = factorialNumber * i;
-       console.log(factorialNumber);
-       
+
+btnCalculate.addEventListener("click", calculateFactorial);
+
+function calculateFactorial() {
+    let number = document.querySelector("#numberInput").value.trim();
+    let factorialNumber = 1;
+    result.textContent = "";
+    if (number === "") {
+        result.textContent = "Please enter a number";
+        return;
     }
-    displayresult(factorialNumber)
+    number = parseInt(number);
+    if (isNaN(number)) {
+        result.textContent = "Please enter a valid number";
+    } else if (number < 0) {
+        result.textContent = "Please enter a positive number";
+    } else if (number === 0) {
+        displayresult(1);
+    } else {
+        for (let i = 1; i <= number; i++) {
+            factorialNumber *= i;
+        }
+        displayresult(factorialNumber);
+    }
 }
 
+function displayresult(value) {
+    result.textContent = `${value}`;
+}
 
-function displayresult(value){
-    result.textContent += `${value} `;
-    factorialNumber = 1; 
+resetBtn.addEventListener('click', resetForm);
 
+function resetForm() {
+    document.querySelector('#numberInput').value = ''; // clear input
+    result.textContent = ''; // clear result
 }
