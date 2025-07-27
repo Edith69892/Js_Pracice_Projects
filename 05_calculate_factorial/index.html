@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Factorial Calculator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <h2>Factorial Calculator</h2>
     <input type="number" id="numberInput" placeholder="Enter a number" />
-    <button id="calculateBtn">Calculate</button>
-    <p id="result">Result: </p>
+    <div class="buttons">
+      <button id="calculateBtn" class="btn">Calculate</button>
+      <button id="resetBtn" class="btn">Reset</button>
+
+    </div>
+    <p >Result: <span id="result"></span> </p>
   </div>
 </body>
 <script src="script.js"></script>
+
 </html>
