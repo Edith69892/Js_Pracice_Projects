@@ -1,0 +1,223 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+     height: 100vh;
+    width: 100vw;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   background-color: red;
+    height: 85vh;
+    width: 95vw;
+    margin: 10px 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+button {
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 25vw;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid black;
+    position: sticky;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    color: white;
+    width: 25vw;
+    border: 3px solid white;
+}
+
+
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      height: 500px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .cards-area {
+      flex: 1;
+      overflow-y: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding-bottom: 60px; /* Space for button */
+/* }
+
+    .card {
+      height: 100px;
+      background-color: #dcdcdc;
+      border-radius: 8px;
+    }
+
+    .add-btn {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .add-btn:hover {
+      transform: translateX(-50%) translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    } */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 88vh;
+    width: 70vw;
+    margin: 20px auto;
+    background: #534c4c;
+    padding: 15px;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 203px;
+    width: 100%;
+    gap: 20px;
+    background-color: #010101;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.text {
+    display: flex;
+    gap: 15px;
+}
+
+/* Ens
+    
+/* .card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.add-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+    transform: translateX(-50%) translateY(-3px) scale(1.05);
+}
+
+.image {
+    position: relative;
+    height: 100%;
+    width: 35%;
+    background-color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: cen ter; */
+    gap: 10px;
+}
+
+.text-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.capsule {
+    bottom: 4px;
+    z-index: 10;
+    right: 5px;
+    position: absolute;
+    background: #282020;
+    padding: 3px;
+    border-radius: 6px;
+}
