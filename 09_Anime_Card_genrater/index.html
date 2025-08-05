@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Card</title>
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <main>
-        <div class="card">
-            <div class="image">
-                <img src="person-1.jpeg" alt="profile-picture">
-            </div>
-            <div class="info">
-                <span id="name">Richky Park</span>
-                <span id="city">Ahemdabad</span>
-                <span id="profession">Web Devloper</span>
-                <span id="email">Email</span>
-                <div class="skills">
-                    <p>skills</p>
-                    <span>UI/Ux</span>
-                    <span>Front-End Devlopement</span>
-                    <span>HTMl</span>
-                    <span>CSS</span>
-                    <span>Javascript</span>
-                </div>
-            </div>
+  <main style="width: 100vw; height: 100vh;">
+    <div class="genrateBtn">
+        <button id="genrate">Genrate Card</button>
         </div>
-    </main>
+    <div class="popup-overlay" id="formPopup">
+  <div class="popup">
+    <h2>Create Profile</h2>
+    <input type="text" id="nameInput" placeholder="Name" required>
+    <input type="text" id="cityInput" placeholder="City">
+    <input type="text" id="roleInput" placeholder="Job Role">
+    <input type="url" id="imageInput" placeholder="Image URL">
+
+    <label for="skillsSelect">Select Skills:</label>
+    <select id="skillsSelect" multiple>
+      <!-- Frontend -->
+      <option value ="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="React">React</option>
+      <option value="Vue.js">Vue.js</option>
+      <option value="Angular">Angular</option>
+      <option value="Tailwind CSS">Tailwind CSS</option>
+
+      <!-- Backend -->
+      <option value="Node.js">Node.js</option>
+      <option value="Express.js">Express.js</option>
+      <option value="Django">Django</option>
+      <option value="Laravel">Laravel</option>
+
+      <!-- Databases -->
+      <option value="MongoDB">MongoDB</option>
+      <option value="MySQL">MySQL</option>
+      <option value="Firebase">Firebase</option>
+
+      <!-- Tools -->
+      <option value="Git">Git</option>
+      <option value="GitHub">GitHub</option>
+      <option value="Docker">Docker</option>
+
+      <!-- Roles -->
+      <option value="Frontend Developer">Frontend Developer</option>
+      <option value="Backend Developer">Backend Developer</option>
+      <option value="Full Stack Developer">Full Stack Developer</option>
+      <option value="UI/UX Designer">UI/UX Designer</option>
+      <option value="Data Scientist">Data Scientist</option>
+    </select> 
+    <button >Done</button>
+  </div>
+    </div>
+    <!-- <div class="card light">
+      <span class="badge">PRO</span>
+      <div class="profile-img">
+        <img src="   alt="profile-picture"/>
+      </div>
+      <h2>Ricky Park</h2>
+      <h4>NEW YORK</h4>
+      <p>User interface designer and front-end developer</p>
+      <div class="buttons">
+        <button class="message btn">Message</button>
+        <button class="follow btn">Following</button>
+      </div>
+      <div class="skills">
+        <p>SKILLS</p>
+        <div class="tags">
+          <span>UI / UX</span>
+          <span>Front End Development</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node</span>
+        </div>
+      </div>
+    </div>--> 
+      
+  </main>
 </body>
-<script src="script.js"></script>
 </html>
