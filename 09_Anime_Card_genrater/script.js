@@ -32,7 +32,7 @@ submit.addEventListener('click', function(){
         <img src="${imgurl}" alt="profile-img">
       </div>
       <h2>${name}</h2>
-      <h4>${city}/h4>
+      <h4>${city}</h4>
       <p>${jobRole}</p>
       <div class="buttons">
         <button class="message btn">Message</button>
