@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: aqua;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.accordion {
+  margin-top: 10px;
+}
+
+.item {
+  background-color: blueviolet;
+  /* margin: 10px; */
+  /* width: 100%; */
+  /* overflow: auto; */
+  padding: 10px;
+  margin: 5px 5px 10px 5px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
