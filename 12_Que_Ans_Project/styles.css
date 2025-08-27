@@ -20,7 +20,7 @@
    width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
-  background-color: aqua;   
+   
 }
 
 .item {
@@ -49,7 +49,7 @@
 }
 
 .question-btn{
-  font-size: 1rem;
+  font-size: 1-rem;
   background: transparent;
   border-color: #c59d5f;
   cursor: pointer;
