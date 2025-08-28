@@ -26,6 +26,7 @@ main{
     
 }
 .light-dark-btn{
+    font-size: 15px;
     padding: 10px;
     border-radius: 50%;
 }
@@ -33,6 +34,7 @@ main{
 .display{
     height:180px;
     margin: 10px 0;
+    /* background-color: currentcolor; */
 }
 
 .buttons{
@@ -49,8 +51,29 @@ main{
 .btn{
     border-radius: 10px;
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(0.95);
+}
+
+.clear{
+    background-color: #480b0b;
+    color: #ff0000;
+}
+
+.operator, .backspace, .bracket{
+    background-color: blueviolet;
+}
+
+.number{
+    background-color: #484747;
+    color: white;
 }
 
 .equals{
     grid-row: span 2;
+    background-color: aqua;
+    color: black;
 }
